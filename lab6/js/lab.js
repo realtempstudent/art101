@@ -1,21 +1,20 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// lab.js - Lists the details of the means of transport I have coded.
+// Author: Edward Oh
+// Date: April 30, 2023
 
-// Constants
+// Define Variables
+myTransport = ["Toyota Sienna", "feet", "bicycle"]
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+myMainRide = {
+    make: "Toyota",
+    model : "Sienna",
+    color : "White",
+    year : "1997",
+    age : function() {
+        return 2023 - this.year;
+    }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+document.writeln("My means of movement: " + myTransport + "<br>");
+document.writeln("My Main Ride: <pre>",
+    JSON.stringify(myMainRide, null, '\t'), "</pre>");
