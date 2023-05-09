@@ -2,15 +2,17 @@
 // Author: Edward Oh
 // Date: 5/2/2023
 
+// BONUS REQUIREMENT 5
+// this meets the bonus requirement of having window.prompt() happen outside the function and then pass it into the name processing function
 function promptinput() {
   return window.prompt("Name input: ");
-  // this meets the bonus requirement of having window.prompt() happen outside the function and then pass it into the name processing function
 }
 
+// BONUS REQUIREMENT 2
+// this meets the bonus requirement of omitting spaces in the user's input.
 function sorter() {
   var userName = promptinput();
   var spacesomitted = userName.split(' ').join('');
-  // this meets the bonus requirement of omitting spaces in the user's input.
   // this is how spaces are omitted, by splitting the input at any point with a space and then rejoining all contents of the array immediately after the splitting at space has been completed.
   // theoretically this could be split into two lines, but I opted for one because I wanted to demonstrate that JavaScript is technically capable of executing code like this in this manner if instructed to.
   console.log(spacesomitted);
@@ -21,8 +23,9 @@ function sorter() {
   return nameArraySort;
 }
 
+// BONUS REQUIREMENT 1
+// this meets the bonus requirement of combining the capital and lowercase letters
 function sorteruppercasetogether() {
-  // this meets the bonus requirement of combining the capital and lowercase letters
   var arraywithcapitals = sorter();
   var capitals = [];
   var indexestocapitalize = [];
