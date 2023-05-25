@@ -19,10 +19,6 @@ function FizzBuzz() {
             outp += "Pop";
             exclaim = true;
         }
-        if (i % 13 == 0) {
-            outp += "Unlucky"
-            exclaim = true;
-        }
         if (exclaim) {
             outp += "!";
         }
