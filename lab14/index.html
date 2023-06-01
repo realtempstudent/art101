@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 14 - Debugging Tools & Strategies</title>
+
+  	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+<body>
+	<main id="content">
+		<section>
+			<h1>Lab 14 - Debugging Tools & Strategies</h1>
+			<div class="minor-section" id="challenge">
+					<h2>Challenge</h2>
+					<p>The purpose of the lab is to create a function dependant on conditionals.</p>
+			</div>
+
+			<div class="minor-section" id="problems">
+					<h2>Problems</h2>
+					<p>The main problem was found in getting the button to function correctly with the webpage, which needed editing to get done.</p>
+			</div>
+
+			<div class="minor-section" id="results">
+					<h2>Results</h2>
+					<p>The results can be seen in the debugging below.</p>
+					<div id="output"></div>
+			</div>
+			
+			<div class="minor-section" id="results">
+					<h2>Debugging</h2>
+					<p>This is a screenshot of my lab 12 HTML.</p>
+					<img src="img/lab12sourcecode.png" width = 650>
+					<p>This is a screenshot of my lab 12 JavaScript.</p>
+					<img src="img/lab12sourcecode.png" width = 650>
+					<p>This is a screenshot of my completed webpage.</p>
+					<img src="img/lab12webpage.png" width = 650>
+					<p>What was wrong was that my code's "my-input" and "my-button" were in fact the incorrect id labels to use for identification.</p>
+					<p>My JavaScript searched for "input" and "button" specifically, and since they could only find "my-input" and "my-button" instead of "input" and "button", a syntax error was the result.</p>
+					<p>Once this problem was identified, changing the id labels let the code work correctly.</p>
+			</div>
+		</section>
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+		</nav>
+	</main>
+</body>
+</html>
